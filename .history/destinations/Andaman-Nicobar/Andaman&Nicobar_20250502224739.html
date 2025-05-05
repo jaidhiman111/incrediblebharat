@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="andaman-nicobar">
+    <!-- This is the header of the page. -->
+    <header class="header">
+        <div class="logo">
+            <h1>Incredible Bharat</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- This is the main content of the page. -->
+    <main class="main-container">
+        <section class="hero-section">
+            <h2>Welcome to Andaman & Nicobars</h2>
+            <p>Andaman and Nicobar Islands are a group of islands located in the Bay of Bengal, known for their stunning
+                beaches, crystal-clear waters, and rich biodiversity. The islands are a popular tourist destination,
+                offering a range of activities such as snorkeling, scuba diving, and trekking. The capital city is Port
+                Blair, which serves as the gateway to the islands.</p>
+        </section>
+        <hr>
+        <section id="travel-slider">
+            <h2>Top Travel Destinations</h2>
+            <div class="slider-container">
+                <button class="slide-btn left" onclick="slideLeft('travel')">&#10094;</button>
+
+                <div class="slider">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/radhanagar beach.jpg" alt="Radhanagar Beach">
+                        </div>
+                        <div>
+                            <h3>Radhanagar Beach</h3>
+                            <p>Asia's top-ranked beach with white sands and blue waters.
+                                <a href="#" onclick="openModal('radhanagar-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/cellular-jail.jpg" alt="Cellular Jail">
+                        </div>
+                        <div>
+                            <h3>Cellular Jail</h3>
+                            <p>Historic colonial prison and national memorial.
+                                <a href="#" onclick="openModal('cellular-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/Ross-island.jpg" alt="Ross Island">
+                        </div>
+                        <div>
+                            <h3>Ross Island</h3>
+                            <p>Explore British ruins set amidst tropical beauty.
+                                <a href="#" onclick="openModal('ross-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/elephant-beach.jpg" alt="Elephant Beach">
+                        </div>
+                        <div>
+                            <h3>Elephant Beach</h3>
+                            <p>Snorkeling and coral reefs await adventurers.
+                                <a href="#" onclick="openModal('elephant-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/baratang.jpg" alt="Baratang Island">
+                        </div>
+                        <div>
+                            <h3>Baratang Island</h3>
+                            <p>Limestone caves and lush mangroves.
+                                <a href="#" onclick="openModal('baratang-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/northbay.jpg" alt="North Bay Island">
+                        </div>
+                        <div>
+                            <h3>North Bay Island</h3>
+                            <p>Snorkeling paradise with a famous lighthouse.
+                                <a href="#" onclick="openModal('northbay-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/chidiya.jpg" alt="Chidiya Tapu">
+                        </div>
+                        <div>
+                            <h3>Chidiya Tapu</h3>
+                            <p>Birdwatching haven with stunning sunsets.
+                                <a href="#" onclick="openModal('chidiya-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/mountharriet.jpg" alt="Mount Harriet">
+                        </div>
+                        <div>
+                            <h3>Mount Harriet</h3>
+                            <p>Panoramic views and lush forest trails.
+                                <a href="#" onclick="openModal('harriet-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/neilisland.jpg" alt="Neil Island">
+                        </div>
+                        <div>
+                            <h3>Neil Island</h3>
+                            <p>Tranquil beaches and scenic coral reefs.
+                                <a href="#" onclick="openModal('neil-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/media/andaman/viper-island.jpg" alt="Viper Island">
+                        </div>
+                        <div>
+                            <h3>Viper Island</h3>
+                            <p>Ruins of British gallows and a rich past.
+                                <a href="#" onclick="openModal('viper-modal')">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Modal Sections (Initially Hidden) -->
+                    <div class="blog-post">
+                        <img src="images/radhanagar.jpg" alt="Radhanagar Beach" class="post-image">
+                    
+                        <h1>Radhanagar Beach</h1>
+                        <p class="blog-text">
+                            Often hailed as one of the best beaches in Asia, Radhanagar Beach on Havelock Island is a paradise of silky white sand, turquoise water, and serene sunsets. The beach stretches along the coast, offering tranquil vibes perfect for relaxation, swimming, and photography. Visitors come here to escape the noise and lose themselves in the calm of nature. 
+                        </p>
+                    
+                        <h2>How to Reach</h2>
+                        <p class="blog-text">
+                            First, reach Port Blair (Veer Savarkar Airport). From there, take a government or private ferry to Havelock Island (Swaraj Dweep). Radhanagar Beach is about 10 km from the Havelock jetty and can be reached by cab, auto-rickshaw, or rented two-wheeler.
+                        </p>
+                    
+                        <h2>Location</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.41016932215!2d93.00837653132472!3d11.97975279891707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30889540a57a6e03%3A0xdda44f741173c8e2!2sRadhanagar%20Beach!5e0!3m2!1sen!2sin!4v1682956502351!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+
+                    <div id="cellular-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('cellular-modal')">&times;</span>
+                            <h2>Cellular Jail</h2>
+                            <p>A historical landmark symbolizing India's freedom struggle. Walk through the corridors of
+                                history and sacrifice.</p>
+                        </div>
+                    </div>
+
+                    <div id="ross-modal" class="modal-card">
+                        <div class="modal-content"><span class="close" onclick="closeModal('ross-modal')">&times;</span>
+                            <h2>Ross Island</h2>
+                            <p>Ruins of colonial buildings set in nature. Ross Island offers a quiet yet powerful
+                                glimpse into Andaman’s British past.</p>
+                        </div>
+                    </div>
+
+                    <div id="elephant-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('elephant-modal')">&times;</span>
+                            <h2>Elephant Beach</h2>
+                            <p>Known for coral reefs and adventure activities like snorkeling, it's a must-visit for
+                                thrill-seekers.</p>
+                        </div>
+                    </div>
+
+                    <div id="baratang-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('baratang-modal')">&times;</span>
+                            <h2>Baratang Island</h2>
+                            <p>Baratang is home to natural limestone caves, dense mangroves, and mud volcanoes – a
+                                hidden gem of the Andamans.</p>
+                        </div>
+                    </div>
+
+                    <div id="northbay-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('northbay-modal')">&times;</span>
+                            <h2>North Bay Island</h2>
+                            <p>A famous snorkeling site, home to the lighthouse seen on the ₹20 note and colorful marine
+                                life.</p>
+                        </div>
+                    </div>
+
+                    <div id="chidiya-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('chidiya-modal')">&times;</span>
+                            <h2>Chidiya Tapu</h2>
+                            <p>Peaceful beach for birdwatchers and sunset lovers. Explore the biodiversity in its
+                                natural form.</p>
+                        </div>
+                    </div>
+
+                    <div id="harriet-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('harriet-modal')">&times;</span>
+                            <h2>Mount Harriet</h2>
+                            <p>Second highest peak in Andaman. Perfect for trekking and spotting endemic species in the
+                                forest.</p>
+                        </div>
+                    </div>
+
+                    <div id="neil-modal" class="modal-card">
+                        <div class="modal-content"><span class="close" onclick="closeModal('neil-modal')">&times;</span>
+                            <h2>Neil Island</h2>
+                            <p>Known for its quiet beaches, natural rock formations, and laid-back vibe — a peaceful
+                                retreat.</p>
+                        </div>
+                    </div>
+
+                    <div id="viper-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('viper-modal')">&times;</span>
+                            <h2>Viper Island</h2>
+                            <p>A small island with historical remnants of British gallows and a tranquil atmosphere.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <button class="slide-btn right" onclick="slideRight('travel')">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <!-- This is the footer of the page. -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2023 Incredible Bharat. All rights reserved.</p>
+        </div>
+        <div>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="andaman-nicobar">
+    <!-- This is the header of the page. -->
+    <header class="header">
+        <div class="logo">
+            <h1>Incredible Bharat</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- This is the main content of the page. -->
+    <main class="main-container">
+        <section class="hero-section">
+            <h2>Welcome to Andaman & Nicobars</h2>
+            <p>Andaman and Nicobar Islands are a group of islands located in the Bay of Bengal, known for their stunning
+                beaches, crystal-clear waters, and rich biodiversity. The islands are a popular tourist destination,
+                offering a range of activities such as snorkeling, scuba diving, and trekking. The capital city is Port
+                Blair, which serves as the gateway to the islands.</p>
+        </section>
+        <hr>
+        <section id="travel-slider">
+            <h2 id="travel-destinations">Top Travel Destinations</h2>
+            <div class="slider-container">
+                <button class="slide-btn left" onclick="slideLeft('travel')">&#10094;</button>
+
+                <div class="slider">
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('radhanagar-modal')">
+
+                            <div class="card-image">
+                                <img src="/media/andaman/radhanagar beach.jpg" alt="Radhanagar Beach">
+                            </div>
+                            <div class="card-content">
+                                <h3>Radhanagar Beach</h3>
+                                <p>Asia's top-ranked beach with white sands and blue waters. <span
+                                        class="read-more">Read more</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('cellular-modal')">
+
+                            <div class="card-image">
+                                <img src="/media/andaman/cellular-jail.jpg" alt="Cellular Jail">
+                            </div>
+                            <div>
+                                <h3>Cellular Jail</h3>
+                                <p>Historic colonial prison and national memorial. Read more</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <a href="javascript:void(0);" onclick="openModal('ross-modal')">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/media/andaman/Ross-island.jpg" alt="Ross Island">
+                            </div>
+                            <div>
+                                <h3>Ross Island</h3>
+                                <p>Explore British ruins set amidst tropical beauty. Read more</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('elephant-modal')">
+                            <div class="card-image">
+                                <img src="/media/andaman/elephant-beach.jpg" alt="Elephant Beach">
+                            </div>
+                            <div>
+                                <h3>Elephant Beach</h3>
+                                <p>Snorkeling and coral reefs await adventurers. Read more</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('baratang-modal')">
+
+                            <div class="card-image">
+                                <img src="/media/andaman/baratang.jpg" alt="Baratang Island">
+                            </div>
+                            <div>
+                                <h3>Baratang Island</h3>
+                                <p>Limestone caves and lush mangroves. Read more</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="javascript:void(0);" onclick="openModal('northbay-modal')">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/media/andaman/northbay.jpg" alt="North Bay Island">
+                            </div>
+                            <div>
+                                <h3>North Bay Island</h3>
+                                <p>Snorkeling paradise with a famous lighthouse. Read more</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0);" onclick="openModal('chidiya-modal')">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/media/andaman/chidiya.jpg" alt="Chidiya Tapu">
+                            </div>
+                            <div>
+                                <h3>Chidiya Tapu</h3>
+                                <p>Birdwatching haven with stunning sunsets. Read more</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0);" onclick="openModal('harriet-modal')">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/media/andaman/mountharriet.jpg" alt="Mount Harriet">
+                            </div>
+                            <div>
+                                <h3>Mount Harriet</h3>
+                                <p>Panoramic views and lush forest trails. Read more</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0);" onclick="openModal('neil-modal')">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/media/andaman/neilisland.jpg" alt="Neil Island">
+                            </div>
+                            <div>
+                                <h3>Neil Island</h3>
+                                <p>Tranquil beaches and scenic coral reefs. Read more</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0);" onclick="openModal('viper-modal')">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="/media/andaman/viper-island.jpg" alt="Viper Island">
+                            </div>
+                            <div>
+                                <h3>Viper Island</h3>
+                                <p>Ruins of British gallows and a rich past. Read more</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!-- Modal Sections (Initially Hidden) -->
+                    <div id="radhanagar-modal" class="modal-card">
+                        <div class="modal-content"><span class="close"
+                                onclick="closeModal('radhanagar-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Radhanagar Beach</h1>
+                                <img src="/media/andaman/radhanagar beach.jpg" alt="Radhanagar Beach"
+                                    class="post-image">
+
+                                <p class="blog-text">
+                                    Often hailed as one of the best beaches in Asia, Radhanagar Beach on Havelock Island
+                                    is a paradise of silky white sand, turquoise water, and serene sunsets. The beach
+                                    stretches along the coast, offering tranquil vibes perfect for relaxation, swimming,
+                                    and photography. Visitors come here to escape the noise and lose themselves in the
+                                    calm of nature.
+                                </p>
+
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    First, reach Port Blair (Veer Savarkar Airport). From there, take a government or
+                                    private ferry to Havelock Island (Swaraj Dweep). Radhanagar Beach is about 10 km
+                                    from the Havelock jetty and can be reached by cab, auto-rickshaw, or rented
+                                    two-wheeler.
+                                </p>
+
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.41016932215!2d93.00837653132472!3d11.97975279891707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30889540a57a6e03%3A0xdda44f741173c8e2!2sRadhanagar%20Beach!5e0!3m2!1sen!2sin!4v1682956502351!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cellular-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('cellular-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Cellular Jail</h1>
+                                <img src="/media/andaman/cellular-jail.jpg" alt="Cellular Jail" class="post-image">
+                                <p class="blog-text">
+                                    A historical landmark symbolizing India's freedom struggle, Cellular Jail in Port
+                                    Blair, also known as Kala Pani, once housed many brave freedom fighters under
+                                    British rule. Today, it stands as a solemn memorial to their sacrifices. Visitors
+                                    can explore the cells, corridors, and a powerful light and sound show that brings
+                                    history alive.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Cellular Jail is located in Port Blair, around 5 km from the Veer Savarkar Airport.
+                                    You can reach it by auto-rickshaw, cab, or local buses easily within 10–15 minutes.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.41016932215!2d92.7413!3d11.6686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088916fa48c3cd3%3A0x72be71bc3dc8b3b!2sCellular%20Jail!5e0!3m2!1sen!2sin!4v1682956588888!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="ross-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('ross-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Ross Island</h1>
+                                <img src="/media/andaman/ross-island.jpg" alt="Ross Island" class="post-image">
+                                <p class="blog-text">
+                                    Once the administrative headquarters of the British, Ross Island is now a ghost town
+                                    filled with ruins overrun by nature. The island offers a quiet walk through colonial
+                                    buildings like the church, bakery, and offices. Peacocks, deer, and banyan trees add
+                                    charm to this historical island surrounded by the sea.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Take a short 15-minute boat ride from Port Blair's Aberdeen Jetty. Boats to Ross
+                                    Island operate daily, and round-trip tickets can be purchased at the jetty.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63391.14091884852!2d92.7718265!3d11.6734621!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088913a4e28b51d%3A0x45f40bafe7a4ed7c!2sRoss%20Island!5e0!3m2!1sen!2sin!4v1682957001111!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="elephant-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('elephant-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Elephant Beach</h1>
+                                <img src="/media/andaman/elephant-beach.jpg" alt="Elephant Beach" class="post-image">
+                                <p class="blog-text">
+                                    Famous for its coral reefs and vibrant marine life, Elephant Beach on Havelock
+                                    Island is a hotspot for water sports. Activities like snorkeling, sea walking, and
+                                    jet skiing draw tourists looking for underwater adventures amidst crystal-clear
+                                    water.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    From Havelock Island jetty, take a 20-minute boat ride or hike through the forest
+                                    trail to reach Elephant Beach. Boats are available in the morning till early
+                                    afternoon.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.41016932215!2d93.0195!3d11.9843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x308896fdc795b56b%3A0xc1f672650bbf3f3a!2sElephant%20Beach!5e0!3m2!1sen!2sin!4v1682957152351!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="baratang-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('baratang-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Baratang Island</h1>
+                                <img src="/media/andaman/baratang.jpg" alt="Baratang Island" class="post-image">
+                                <p class="blog-text">
+                                    A less-explored paradise, Baratang Island features natural limestone caves, thick
+                                    mangrove creeks, and rare mud volcanoes. It’s a scenic retreat into the raw beauty
+                                    of Andaman and home to tribal reserves and unique biodiversity.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Baratang is about 100 km from Port Blair. Take a government bus or private cab via
+                                    the Andaman Trunk Road, passing through tribal areas under police escort.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63379.29149632564!2d92.5518!3d12.1343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30888e121274f6b3%3A0xbfc1b4fd16e0496!2sBaratang%20Island!5e0!3m2!1sen!2sin!4v1682957258761!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="northbay-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('northbay-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>North Bay Island</h1>
+                                <img src="/media/andaman/north-bay.jpg" alt="North Bay Island" class="post-image">
+                                <p class="blog-text">
+                                    North Bay Island is popular for its coral reefs, glass-bottom boat rides, and
+                                    underwater walking experiences. It is also the site of the lighthouse featured on
+                                    the ₹20 currency note. A must-visit for marine life lovers.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Boats to North Bay Island depart from Aberdeen Jetty in Port Blair. The ride takes
+                                    around 30 minutes and is often clubbed with Ross Island tours.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.41016932215!2d92.7976!3d11.6889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088913f140de36f%3A0x9617277b8d9332ef!2sNorth%20Bay%20Island!5e0!3m2!1sen!2sin!4v1682957338445!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="chidiya-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('chidiya-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Chidiya Tapu</h1>
+                                <img src="/media/andaman/chidiya-tapu.jpg" alt="Chidiya Tapu" class="post-image">
+                                <p class="blog-text">
+                                    Also known as the "Sunset Point," Chidiya Tapu is famed for its magical sunsets,
+                                    lush forests, and birdwatching. It’s a quiet retreat near Port Blair, where you can
+                                    walk along black sand beaches and enjoy views of tropical birds and mangroves.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Located around 30 km from Port Blair, it takes about 45 minutes by road via cab,
+                                    auto, or bike rental.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126764.82066128995!2d92.6842!3d11.4949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088901b108b70fd%3A0x34565434e93fc4!2sChidiya%20Tapu!5e0!3m2!1sen!2sin!4v1682957447200!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="mount-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('mount-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Mount Harriet National Park</h1>
+                                <img src="/media/andaman/mount-harriet.jpg" alt="Mount Harriet National Park"
+                                    class="post-image">
+                                <p class="blog-text">
+                                    The second-highest peak in the Andaman Islands, Mount Harriet offers panoramic
+                                    views, lush greenery, and rare wildlife. It’s ideal for nature lovers and trekkers.
+                                    The park is also featured on the old ₹20 note showing a scenic coastal view.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Located 20 km from Port Blair, you can reach Mount Harriet by ferry from Chatham
+                                    Jetty to Bambooflat, followed by a short drive or hike.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.41016932215!2d92.793!3d11.6902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x308891b86ef0cf35%3A0x7c14fd4b0a2b2b1b!2sMount%20Harriet%20National%20Park!5e0!3m2!1sen!2sin!4v1682957561554!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="neil-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('neil-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Neil Island (Shaheed Dweep)</h1>
+                                <img src="/media/andaman/neil-island.jpg" alt="Neil Island" class="post-image">
+                                <p class="blog-text">
+                                    A serene paradise known for its relaxed vibe, Neil Island features stunning beaches
+                                    like Bharatpur and Laxmanpur. It's perfect for snorkeling, cycling, and watching
+                                    spectacular sunsets without the crowds.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Ferries run daily from Port Blair and Havelock Island to Neil Island. The ride takes
+                                    about 1.5 to 2 hours depending on the vessel.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63379.29149632564!2d93.017!3d11.8393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x308894c7b07fd2d3%3A0x7a4383e00935f00a!2sNeil%20Island!5e0!3m2!1sen!2sin!4v1682957650922!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="viper-modal" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('viper-modal')">&times;</span>
+                            <div class="blog-post">
+                                <h1>Viper Island</h1>
+                                <img src="/media/andaman/viper-island.jpg" alt="Viper Island" class="post-image">
+                                <p class="blog-text">
+                                    Once a site for British executions, Viper Island has eerie ruins of an old gallows
+                                    and prison. The tranquil surroundings and historical relevance make it a hauntingly
+                                    beautiful stop in the Andaman itinerary.
+                                </p>
+                                <h3>How to Reach</h3>
+                                <p class="blog-text">
+                                    Take a boat from Phoenix Bay Jetty in Port Blair. It’s a short 15-20 minute ride to
+                                    Viper Island.
+                                </p>
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.41016932215!2d92.7502!3d11.6725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088914cf6f6de9b%3A0x9bd0c024a28f0a4c!2sViper%20Island!5e0!3m2!1sen!2sin!4v1682957707700!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <button class="slide-btn right" onclick="slideRight('travel')">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <!-- This is the footer of the page. -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2023 Incredible Bharat. All rights reserved.</p>
+        </div>
+        <div>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>

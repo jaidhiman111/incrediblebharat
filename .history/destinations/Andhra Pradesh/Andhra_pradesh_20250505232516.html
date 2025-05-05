@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="andhra-pradesh">
+    <!-- This is the header of the page. -->
+    <header class="header">
+        <div class="logo">
+            <h1>Incredible Bharat</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- This is the main content of the page. -->
+    <main class="main-container">
+        <section class="hero-section">
+            <h2>Welcome to Andhra Pradesh</h2>
+            <p>Andhra Pradesh, located in southeastern India, is renowned for its rich history, diverse culture, and
+                scenic beauty. The state boasts ancient temples like those in Tirupati and Lepakshi, stunning beaches
+                along Visakhapatnam, and lush green hills in Araku Valley. Andhra Pradesh is also famous for its vibrant
+                classical dance forms, such as Kuchipudi, and intricate handloom crafts. The cuisine is known for its
+                bold flavors and spicy dishes like biryani, gongura, and pickles. With a perfect blend of heritage and
+                natural attractions, Andhra Pradesh offers travelers an immersive experience into the cultural and
+                spiritual heart of South India.</p>
+
+        </section>
+        <hr>
+        <section id="travel-slider">
+            <h2 id="travel-destinations">Top Travel Destinations</h2>
+            <div class="slider-container">
+                <button class="slide-btn left" onclick="slideLeft('travel')">&#10094;</button>
+
+                <div class="slider">
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('araku-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/araku-valley.jpg" alt="Araku Valley">
+                            </div>
+                            <div class="card-content">
+                                <h3>Araku Valley</h3>
+                                <p>Misty hills, waterfalls, and tribal culture in this scenic hill station....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('tirupati-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/tirupati.jpg" alt="Tirupati Temple">
+                            </div>
+                            <div>
+                                <h3>Tirupati Temple</h3>
+                                <p>One of India's holiest pilgrimage sites, dedicated to Lord Venkateswara....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('gandikota-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/gandikota.jpg" alt="Gandikota Gorge">
+                            </div>
+                            <div>
+                                <h3>Gandikota Gorge</h3>
+                                <p>Known as the Grand Canyon of India with stunning landscapes....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('vizag-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/vizag-beach.jpg" alt="RK Beach Vizag">
+                            </div>
+                            <div>
+                                <h3>RK Beach, Vizag</h3>
+                                <p>Relax at the famous Ramakrishna Beach with its vibrant promenade....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('ahobilam-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/ahobilam.jpg" alt="Ahobilam Temple">
+                            </div>
+                            <div>
+                                <h3>Ahobilam</h3>
+                                <p>A sacred site for devotees of Lord Narasimha, nestled in the Nallamala hills....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('srisailam-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/srisailam.jpg" alt="Srisailam Temple">
+                            </div>
+                            <div>
+                                <h3>Srisailam</h3>
+                                <p>Ancient temple town by the Krishna River, surrounded by dense forests....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('belum-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/belum-caves.jpg" alt="Belum Caves">
+                            </div>
+                            <div>
+                                <h3>Belum Caves</h3>
+                                <p>Explore India's second-largest cave system with fascinating formations....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('kakinada-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/kakinada-beach.jpg" alt="Kakinada Beach">
+                            </div>
+                            <div>
+                                <h3>Kakinada Beach</h3>
+                                <p>A peaceful coastal getaway with golden sands and calm waters....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('lepakshi-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/lepakshi.jpg" alt="Lepakshi Temple">
+                            </div>
+                            <div>
+                                <h3>Lepakshi</h3>
+                                <p>Home to ancient Vijayanagara architecture and the hanging pillar....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="javascript:void(0);" onclick="openModal('kondapalli-modal')">
+                            <div class="card-image">
+                                <img src="/media/andhra/kondapalli.jpg" alt="Kondapalli Fort">
+                            </div>
+                            <div>
+                                <h3>Kondapalli Fort</h3>
+                                <p>Historic fort known for panoramic views and wooden toys....</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+
+
+                    <!-- Modal Sections (Initially Hidden) -->
+                    <!-- Araku Valley Modal -->
+<div id="araku-modal" class="modal-card">
+    <div class="modal-content"><span class="close" onclick="closeModal('araku-modal')">&times;</span>
+        <div class="blog-post">
+            <h1>Araku Valley</h1>
+            <img src="/media/andhra/araku-valley.jpg" alt="Araku Valley" class="post-image">
+            <p class="blog-text">
+                Araku Valley, located in the Eastern Ghats, is a scenic hill station surrounded by lush forests,
+                waterfalls, and coffee plantations. The misty hills and picturesque landscapes make it a perfect
+                getaway for nature lovers and adventure enthusiasts.
+            </p>
+            <h3>How to Reach</h3>
+            <p class="blog-text">
+                The nearest airport is Visakhapatnam (VIZ), about 115 km away. You can reach Araku Valley by train
+                from Visakhapatnam or by road via a cab or bus.
+            </p>
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116750.36364339183!2d82.74113211583665!3d17.590870148740124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35a39bb1a4913f%3A0x35b57f825c232c70!2sAraku%20Valley!5e0!3m2!1sen!2sin!4v1683430560890!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Tirupati Temple Modal -->
+<div id="tirupati-modal" class="modal-card">
+    <div class="modal-content"><span class="close" onclick="closeModal('tirupati-modal')">&times;</span>
+        <div class="blog-post">
+            <h1>Tirupati Temple</h1>
+            <img src="/media/andhra/tirupati.jpg" alt="Tirupati Temple" class="post-image">
+            <p class="blog-text">
+                Tirupati Temple, dedicated to Lord Venkateswara, is one of the holiest pilgrimage sites in India.
+                Situated in the hills of Tirumala, this ancient temple is visited by millions of devotees each year
+                seeking blessings and spiritual solace.
+            </p>
+            <h3>How to Reach</h3>
+            <p class="blog-text">
+                The nearest airport is Tirupati Airport, which is 15 km from the temple. You can also reach Tirupati
+                by train or bus from major cities in Andhra Pradesh and nearby states.
+            </p>
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116756.57323877861!2d79.38318359325413!3d13.629179411779353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3915b08a2b6b61%3A0x53692c9283d46a7f!2sSri%20Venkateswara%20Temple!5e0!3m2!1sen!2sin!4v1683431337239!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Gandikota Gorge Modal -->
+<div id="gandikota-modal" class="modal-card">
+    <div class="modal-content"><span class="close" onclick="closeModal('gandikota-modal')">&times;</span>
+        <div class="blog-post">
+            <h1>Gandikota Gorge</h1>
+            <img src="/media/andhra/gandikota.jpg" alt="Gandikota Gorge" class="post-image">
+            <p class="blog-text">
+                Often referred to as the Grand Canyon of India, Gandikota Gorge is a stunning landscape carved by the
+                Penna River, offering panoramic views and a serene environment for trekkers and photographers.
+            </p>
+            <h3>How to Reach</h3>
+            <p class="blog-text">
+                Gandikota can be reached from Kadapa by road, approximately 30 km away. The nearest railway station
+                is Kadapa, which is well connected to major cities.
+            </p>
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d262531.081784569!2d78.5560321413325!3d14.472024313008334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38931c8d67228f%3A0xe0fda30676a4e55a!2sGandikota%20Fort!5e0!3m2!1sen!2sin!4v1683432140542!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- RK Beach, Vizag Modal -->
+<div id="vizag-modal" class="modal-card">
+    <div class="modal-content"><span class="close" onclick="closeModal('vizag-modal')">&times;</span>
+        <div class="blog-post">
+            <h1>RK Beach, Vizag</h1>
+            <img src="/media/andhra/vizag-beach.jpg" alt="RK Beach Vizag" class="post-image">
+            <p class="blog-text">
+                RK Beach in Visakhapatnam is one of the most popular beaches in Andhra Pradesh, known for its
+                lively atmosphere, food stalls, and vibrant promenade. It is an ideal spot for a relaxed evening by
+                the sea.
+            </p>
+            <h3>How to Reach</h3>
+            <p class="blog-text">
+                Visakhapatnam is well connected by air, rail, and road. The beach is located near the city center,
+                and you can reach there by taxi or auto-rickshaw.
+            </p>
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116752.77403502069!2d83.3082327353875!3d17.71104002814973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39396a6c2d1df5%3A0xa68b5a09b4eb2462!2sRK%20Beach!5e0!3m2!1sen!2sin!4v1683432697631!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Ahobilam Modal -->
+<div id="ahobilam-modal" class="modal-card">
+    <div class="modal-content"><span class="close" onclick="closeModal('ahobilam-modal')">&times;</span>
+        <div class="blog-post">
+            <h1>Ahobilam</h1>
+            <img src="/media/andhra/ahobilam.jpg" alt="Ahobilam Temple" class="post-image">
+            <p class="blog-text">
+                Ahobilam is a sacred pilgrimage site dedicated to Lord Narasimha, nestled in the Nallamala hills.
+                It is known for its serene surroundings, temples, and trekking trails that attract devotees and
+                adventure seekers alike.
+            </p>
+            <h3>How to Reach</h3>
+            <p class="blog-text">
+                The nearest major town is Allagadda, located around 60 km from Ahobilam. You can reach Ahobilam
+                by road from Allagadda or Nandyal.
+            </p>
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116751.05346731779!2d78.7790931854737!3d14.008764442266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39b0a0c6e05407%3A0x2ffb0d876b06cf9d!2sAhobilam!5e0!3m2!1sen!2sin!4v1683433189267!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Continue with the same structure for the other destinations like Nellore, Puttaparthi, Kakinada, etc. -->
+
+
+
+                </div>
+
+
+                <button class="slide-btn right" onclick="slideRight('travel')">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <!-- This is the footer of the page. -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2023 Incredible Bharat. All rights reserved.</p>
+        </div>
+        <div>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>

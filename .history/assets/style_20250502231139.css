@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    font-family: Arial, sans-serif;
+    background-image: url('/media/bg-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.andaman-nicobar {
+    font-family: Arial, sans-serif;
+    background-image: url('/media/andaman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+
+/* This is for header */
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* This is for section */
+section {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    /* stack items vertically */
+    justify-content: center;
+    /* center vertically */
+    align-items: center;
+    /* center horizontally */
+    height: 80vh;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    max-width: 100rem;
+    /* limit the width of the paragraph */
+    line-height: 1.5;
+    /* improve readability */
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #fff;
+}
+
+.state-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.state-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.state-button {
+    padding: 30px;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.state-button button {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.state-button button a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.state-button button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+/* This is for footer */
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #fff;
+    transform: scale(1.1);
+
+}
+
+/* This is for media queries */
+/* --- Andaman & Nicobar Page Enhancements --- */
+
+/* Container Styling */
+#travel-slider {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  #travel-slider h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  /* Slider Container */
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  /* Inner Slider Track */
+  .slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+  }
+  
+  /* Hide scrollbar on slider */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  .slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* Card Style */
+  .card {
+    flex: 0 0 280px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image in Card */
+  .card-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  /* Text inside Card */
+  .card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    color: #222;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    padding: 0 10px 15px;
+    color: #555;
+  }
+  
+  /* Navigation Buttons */
+  .slide-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: #003366;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 8px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    transition: background-color 0.3s;
+  }
+  
+  .slide-btn:hover {
+    background-color: #005599;
+  }
+  
+  .slide-btn.left {
+    left: 10px;
+  }
+  
+  .slide-btn.right {
+    right: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .card {
+      flex: 0 0 220px;
+    }
+  
+    .card-image img {
+      height: 150px;
+    }
+  
+    .slide-btn {
+      font-size: 1.5rem;
+      padding: 6px 10px;
+    }
+  }
+  
+  .modal-card {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-card .modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 80%;
+    width: 90%;
+    max-height: 90vh; /* restrict height */
+    overflow-y: auto; /* enable scrolling inside */
+    position: relative;
+}
+
+  .modal-card .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .blog-post {
+    width: 100%;
+    margin: 40px auto;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #e0e0e0;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+}
+
+.post-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog-post h1 h2{
+  font-size: 3rem;
+    color: #111;
+    margin-top: 10px;
+}
+
+/* .blog-post h2 {
+    margin-top: 30px;
+    color: #000;
+} */
+
+.blog-text {
+    color: #444;
+    margin-top: 10px;
+}
